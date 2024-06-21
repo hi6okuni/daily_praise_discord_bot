@@ -1,12 +1,13 @@
 {
 	"deploy": {
-		"project": "3477664c-775b-4a82-82a5-8e36a99f8af6",
-		"exclude": ["**/node_modules"],
+		"project": "e7357693-037c-43ee-bb08-64a74f5bf9ce",
+		"exclude": ["**/node_modules", "**/node_modules"],
 		"include": [],
 		"entrypoint": "main.ts"
 	},
 	"tasks": {
 		"run": "deno run --allow-net main.ts",
-		"format": "deno run -A npm:@biomejs/biome format --write ."
+		"format": "deno run -A npm:@biomejs/biome format --write .",
+		"cron": "deno run -A --allow-net --unstable-cron main.ts"
 	}
 }
