@@ -49,7 +49,7 @@ async function checkAtCoderSubmissions(): Promise<checkAtCoderSubmissionsRespons
 	try {
 		const result: checkAtCoderSubmissionsResponse = {};
 
-		for (const username of ATCODER_USERNAMES) {
+		for (const username of atCoderUsernames) {
 			const response = await fetch(
 				`https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=${username}&from_second=${fromEpochSecond}`,
 			);
