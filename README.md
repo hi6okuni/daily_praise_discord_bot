@@ -8,9 +8,9 @@ This project is a service to track and report LeetCode and AtCoder submissions f
 -  Filter submissions made within the last 24 hours.
 -  Send a summary of successful submissions to a Discord webhook.
 
-## Prerequisites
+## Usage in Your Local Environment
 
--  install [Deno](https://docs.deno.com/runtime/manual) on your machine.
+-  install [Deno](https://docs.deno.com/runtime/manual) on your local machine.
 
 - Create a `.env` file in the root directory and configure the following variables:
 
